@@ -65,7 +65,7 @@ body {
 }
 
 #answer-buttons {
-text-align: center;
+    text-align: center;
 }
 
 #retry-btn {
@@ -90,6 +90,11 @@ footer {
 
 .bold {
     font-weight: bold;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 480px){
