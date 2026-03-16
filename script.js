@@ -148,11 +148,14 @@ function showResults() {
 		message = "That's not too good. Try again!";
 	}
 	document.getElementById("answer-buttons").innerHTML = `<h3>${message}</h3>`;
+	document.getElementById("answer-buttons").style.display = "flex";
+	document.getElementById("answer-buttons").classList.add("message");
 	document.getElementById("retry-btn").style.display = "flex";
 }
 
 function restartQuiz() {
 	document.getElementById("retry-btn").style.display = "none";
+	document.getElementById("answer-buttons").classList.remove("message");
 	document.getElementById("answer-buttons").style.display = "grid";
 	document.getElementById("question").classList.remove("bold");
 	// level = 0;
